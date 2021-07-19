@@ -1,0 +1,136 @@
+
+/* COLOR PALLETE-
+
+color-primary-dark: #023e8a
+color-primary-light: #90e0ef
+
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(230%2c 249%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c431.72C79.992%2c421.002%2c146.942%2c377.009%2c219.252%2c341.163C301.482%2c300.399%2c406.659%2c286.061%2c453.291%2c207.011C500.508%2c126.97%2c486.134%2c22.962%2c459.477%2c-66.063C434.902%2c-148.135%2c356.852%2c-197.044%2c310.693%2c-269.217C254.071%2c-357.75%2c257.236%2c-503.443%2c157.868%2c-537.65C59.753%2c-571.425%2c-24.463%2c-451.375%2c-122.873%2c-418.468C-216.166%2c-387.272%2c-347.859%2c-430.802%2c-403.751%2c-349.852C-461.245%2c-266.582%2c-376.731%2c-155.03%2c-374.616%2c-53.862C-372.953%2c25.698%2c-411.865%2c102.103%2c-392.688%2c179.335C-371.216%2c265.809%2c-335.522%2c357.278%2c-260.568%2c405.452C-185.613%2c453.626%2c-88.312%2c443.552%2c0%2c431.72' fill='%2385e2ff'%3e%3c/path%3e%3cpath d='M1440 941.856C1527.324 935.354 1617.278 996.268 1696.77 959.5409999999999 1778.031 921.996 1824.334 833.679 1855.644 749.818 1885.615 669.545 1869.078 584.008 1868.97 498.323 1868.843 396.86400000000003 1927.478 271.393 1854.954 200.44 1780.659 127.75400000000002 1651.444 207.762 1549.797 186.06400000000002 1459.627 166.81599999999997 1391.541 74.75200000000001 1299.617 81.89800000000002 1202.962 89.411 1103.846 142.125 1053.021 224.68099999999998 1003.404 305.274 1053.849 408.865 1040.626 502.579 1027.453 595.933 954.229 680.217 975.7919999999999 771.9970000000001 998.457 868.467 1064.3609999999999 965.646 1157.423 999.6990000000001 1249.58 1033.421 1342.138 949.142 1440 941.856' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+
+*/
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0 !important; 
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(230%2c 249%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c431.72C79.992%2c421.002%2c146.942%2c377.009%2c219.252%2c341.163C301.482%2c300.399%2c406.659%2c286.061%2c453.291%2c207.011C500.508%2c126.97%2c486.134%2c22.962%2c459.477%2c-66.063C434.902%2c-148.135%2c356.852%2c-197.044%2c310.693%2c-269.217C254.071%2c-357.75%2c257.236%2c-503.443%2c157.868%2c-537.65C59.753%2c-571.425%2c-24.463%2c-451.375%2c-122.873%2c-418.468C-216.166%2c-387.272%2c-347.859%2c-430.802%2c-403.751%2c-349.852C-461.245%2c-266.582%2c-376.731%2c-155.03%2c-374.616%2c-53.862C-372.953%2c25.698%2c-411.865%2c102.103%2c-392.688%2c179.335C-371.216%2c265.809%2c-335.522%2c357.278%2c-260.568%2c405.452C-185.613%2c453.626%2c-88.312%2c443.552%2c0%2c431.72' fill='%2385e2ff'%3e%3c/path%3e%3cpath d='M1440 941.856C1527.324 935.354 1617.278 996.268 1696.77 959.5409999999999 1778.031 921.996 1824.334 833.679 1855.644 749.818 1885.615 669.545 1869.078 584.008 1868.97 498.323 1868.843 396.86400000000003 1927.478 271.393 1854.954 200.44 1780.659 127.75400000000002 1651.444 207.762 1549.797 186.06400000000002 1459.627 166.81599999999997 1391.541 74.75200000000001 1299.617 81.89800000000002 1202.962 89.411 1103.846 142.125 1053.021 224.68099999999998 1003.404 305.274 1053.849 408.865 1040.626 502.579 1027.453 595.933 954.229 680.217 975.7919999999999 771.9970000000001 998.457 868.467 1064.3609999999999 965.646 1157.423 999.6990000000001 1249.58 1033.421 1342.138 949.142 1440 941.856' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header__heading{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #023e8a;
+    letter-spacing: 2px;
+}
+
+.add-note{
+    width: 30rem;
+    padding: 2rem;
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+
+.add-note__title{
+    margin-right: 3rem;
+}
+
+.add-note__title input{
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.add-note__desc textarea{
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.add-note__title input,
+.add-note__desc textarea{
+    width: 20rem;
+    padding: 1rem 0;
+    border: none;
+    resize: none;
+    background-color: inherit;
+    width: 100%;
+}
+
+.add-note__title input:focus,
+.add-note__desc textarea:focus{
+    outline: none;
+}
+
+.add-note__desc{
+    margin-right: 3rem;
+}
+
+.add-note__btn{
+    position: absolute;
+    bottom: -2.5rem;
+    right: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #9ef01a;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.note{
+    width: 35rem;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    margin-right: auto;
+}
+
+.note__heading{
+    font-size: 2rem;
+}
+
+.note__para{
+    font-size: 1.6rem;
+}
+
+.note__btn-delete{
+    background-color: #ff0054;
+    border: none;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    padding: 6rem 6rem;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
